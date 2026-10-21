@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KEADILAN Pasir Gudang | Parlimen P159 & Cabang</title>
+  <title>KEADILAN Pasir Gudang | Pejabat Parlimen P159</title>
+  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Font: Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -28,111 +30,112 @@
     }
   </script>
 </head>
-<body class="bg-white text-pkr-navy antialiased">
+<body class="bg-white text-pkr-navy antialiased selection:bg-sky-100 selection:text-pkr-skyDark">
 
-  <!-- Top Hotline Bar -->
-  <div class="bg-pkr-sky text-white text-xs md:text-sm py-2 px-4">
+  <!-- Top Announcement Bar -->
+  <div class="bg-pkr-sky text-white text-xs md:text-sm py-2 px-4 shadow-inner">
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
-      <p class="font-medium">Pejabat Ahli Parlimen P159 Pasir Gudang & KEADILAN Cabang Pasir Gudang</p>
-      <div class="flex items-center gap-4">
-        <span>Kawasan Parlimen Pasir Gudang, Johor</span>
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-white animate-pulse"></span>
+        <p class="font-medium">Portal Rasmi Pejabat Ahli Parlimen P159 Pasir Gudang & KEADILAN Cabang Pasir Gudang</p>
+      </div>
+      <div class="flex items-center gap-4 text-xs font-semibold">
+        <span>Taman Rinting, Masai, Johor</span>
       </div>
     </div>
   </div>
 
-  <!-- Header Navigasi -->
+  <!-- Header Navigasi Rasmi (Jata Negara + Madani + KEADILAN) -->
   <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-sky-100 shadow-sm">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
-      <a href="/" class="flex items-center gap-3">
-        <div class="w-11 h-11 rounded-full bg-pkr-sky flex items-center justify-center text-white font-extrabold text-lg shadow-sm">
-          PG
-        </div>
-        <div>
-          <span class="text-xl font-bold tracking-tight text-pkr-navy block leading-none">KEADILAN</span>
-          <span class="text-xs font-semibold text-pkr-sky tracking-wider uppercase">Pasir Gudang</span>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-24">
+      
+      <!-- Gabungan Identiti Lambang Rasmi -->
+      <a href="/" class="flex items-center gap-4">
+        <!-- Lambang Jata Negara -->
+        <img 
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Coat_of_arms_of_Malaysia.svg/440px-Coat_of_arms_of_Malaysia.svg.png" 
+          alt="Jata Negara Malaysia" 
+          class="h-12 w-auto object-contain drop-shadow-sm"
+        />
+
+        <div class="h-8 w-px bg-slate-200"></div>
+
+        <!-- Logo Malaysia MADANI -->
+        <img 
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Logo_Malaysia_Madani.png/640px-Logo_Malaysia_Madani.png" 
+          alt="Malaysia MADANI" 
+          class="h-9 w-auto object-contain drop-shadow-sm"
+        />
+
+        <div class="h-8 w-px bg-slate-200 hidden sm:block"></div>
+
+        <!-- Penjenamaan KEADILAN Pasir Gudang -->
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-pkr-sky flex items-center justify-center text-white font-extrabold text-base shadow-sm">
+            PG
+          </div>
+          <div>
+            <span class="text-lg font-extrabold tracking-tight text-pkr-navy block leading-none">KEADILAN</span>
+            <span class="text-xs font-bold text-pkr-sky tracking-wider uppercase">Parlimen Pasir Gudang</span>
+          </div>
         </div>
       </a>
 
-      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-700">
-        <a href="#" class="text-pkr-sky">Utama</a>
+      <!-- Menu Navigasi -->
+      <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold text-slate-700">
+        <a href="#" class="text-pkr-sky font-bold">Utama</a>
+        <a href="#galeri" class="hover:text-pkr-sky transition">Khidmat Lapangan</a>
         <a href="#sejarah" class="hover:text-pkr-sky transition">Sejarah & Cabang</a>
-        <a href="#parlimen" class="hover:text-pkr-sky transition">Pejabat Parlimen</a>
         <a href="#pusat-khidmat" class="hover:text-pkr-sky transition">Pusat Khidmat</a>
       </nav>
 
+      <!-- Butang Tindakan -->
       <div class="flex items-center gap-3">
-        <a href="#pusat-khidmat" class="px-5 py-2.5 rounded-full bg-pkr-sky hover:bg-pkr-skyDark text-white font-semibold text-sm transition shadow-sm">
-          Hubungi Pejabat
+        <a href="#pusat-khidmat" class="px-5 py-2.5 rounded-full bg-pkr-sky hover:bg-pkr-skyDark text-white font-bold text-xs uppercase tracking-wider transition shadow-sm">
+          Pusat Khidmat
         </a>
       </div>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="relative overflow-hidden bg-gradient-to-b from-pkr-ice via-white to-white py-16 md:py-24">
+  <!-- Hero Section: Dynamic Mosaic Banner Style (Gaya HQ) -->
+  <section class="relative overflow-hidden bg-gradient-to-br from-pkr-ice via-white to-sky-50/50 py-16 lg:py-24">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         
-        <div class="lg:col-span-7 space-y-6">
+        <!-- Kolum Teks Utama (Kiri) -->
+        <div class="lg:col-span-6 space-y-6">
           <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-sky-100 border border-sky-200 text-pkr-skyDark text-xs font-bold uppercase tracking-wider">
             <span>Parlimen P159 Pasir Gudang</span>
           </div>
           
-          <h1 class="text-3xl sm:text-5xl font-extrabold text-pkr-navy leading-tight tracking-tight">
+          <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-pkr-navy leading-tight tracking-tight">
             Berkhidmat Untuk Rakyat, Menegakkan <span class="text-pkr-sky">Keadilan</span> Bersama.
           </h1>
           
-          <p class="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl">
-            Laman rasmi Parti Keadilan Rakyat Cabang Pasir Gudang dan Pejabat Khidmat Parlimen P159. Pusat maklumat komuniti, kebajikan masyarakat, dan khidmat rakyat setempat.
+          <p class="text-base sm:text-lg text-slate-600 leading-relaxed">
+            Meneruskan mandat perjuangan demi integriti, pembelaan hak rakyat pekerja, kebajikan komuniti, dan keharmonian seluruh masyarakat Pasir Gudang.
           </p>
 
           <div class="flex flex-wrap items-center gap-4 pt-2">
-            <a href="#pusat-khidmat" class="px-6 py-3.5 rounded-xl bg-pkr-sky hover:bg-pkr-skyDark text-white font-bold text-base shadow-md shadow-sky-500/20 transition">
-              Pusat Khidmat Rakyat
+            <a href="#pusat-khidmat" class="px-6 py-3.5 rounded-xl bg-pkr-sky hover:bg-pkr-skyDark text-white font-bold text-sm shadow-lg shadow-sky-500/25 transition">
+              Hubungi Pusat Khidmat
             </a>
-            <a href="#sejarah" class="px-6 py-3.5 rounded-xl bg-white border border-slate-200 text-slate-700 hover:border-pkr-sky hover:text-pkr-sky font-bold text-base transition">
-              Sejarah Perjuangan
+            <a href="#galeri" class="px-6 py-3.5 rounded-xl bg-white border border-slate-200 text-slate-700 hover:border-pkr-sky hover:text-pkr-sky font-bold text-sm transition shadow-sm">
+              Lihat Aktiviti Kawasan
             </a>
           </div>
         </div>
 
-       <!-- Kad Pantas Info Pejabat Parlimen -->
-        <div class="lg:col-span-5" id="pusat-khidmat">
-          <div class="bg-white rounded-2xl p-6 sm:p-8 border border-sky-100 shadow-xl shadow-sky-100/50 space-y-6">
-            <div class="border-b border-slate-100 pb-3">
-              <span class="text-xs font-bold text-pkr-sky uppercase tracking-wider">Pusat Khidmat Rakyat</span>
-              <h3 class="text-lg font-bold text-pkr-navy">Parlimen P159 Pasir Gudang</h3>
-            </div>
+        <!-- Kolum Grid Mozek Foto Estetik (Kanan) -->
+        <div class="lg:col-span-6 relative">
+          <!-- Hiasan Cahaya Latar Belakang -->
+          <div class="absolute -top-10 -right-10 w-72 h-72 bg-sky-200/50 rounded-full blur-3xl pointer-events-none"></div>
+          
+          <div class="grid grid-cols-12 gap-3 p-3 bg-white/60 backdrop-blur-sm rounded-3xl border border-sky-100 shadow-2xl shadow-sky-100">
             
-            <div class="space-y-4 text-sm text-slate-600">
-              <div class="flex gap-3">
-                <div class="w-6 h-6 rounded-full bg-sky-50 text-pkr-sky flex items-center justify-center font-bold shrink-0">📍</div>
-                <div>
-                  <strong class="text-pkr-navy block">Alamat Pejabat:</strong>
-                  No. 15A, Jalan Sena 1, Taman Rinting, 81750 Masai, Johor
-                </div>
-              </div>
-
-              <div class="flex gap-3">
-                <div class="w-6 h-6 rounded-full bg-sky-50 text-pkr-sky flex items-center justify-center font-bold shrink-0">🕒</div>
-                <div>
-                  <strong class="text-pkr-navy block">Waktu Operasi:</strong>
-                  Ahad – Khamis: 9.00 Pagi – 5.00 Petang<br>
-                  <span class="text-xs text-slate-400">(Jumaat & Sabtu: Tutup)</span>
-                </div>
-              </div>
-
-              <div class="flex gap-3">
-                <div class="w-6 h-6 rounded-full bg-sky-50 text-pkr-sky flex items-center justify-center font-bold shrink-0">🤝</div>
-                <div>
-                  <strong class="text-pkr-navy block">Khidmat Komuniti:</strong>
-                  Aduan rakyat, kebajikan setempat, dan temujanji rasmi.
-                </div>
-              </div>
-            </div>
-
-            <a href="https://wa.me/60123456789" target="_blank" class="w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-pkr-sky hover:bg-pkr-skyDark text-white font-semibold transition shadow-sm">
-              Hubungi WhatsApp Hotline &rarr;
-            </a>
-          </div>
-        </div>
+            <!-- Foto 1: Sesi Santai Bersama Komuniti (Besar Kiri) -->
+            <div class="col-span-7 overflow-hidden rounded-2xl shadow-md group">
+              <img 
+                src="IMG_0938.jpg" 
+                alt="YB Hassan Karim bersama
